@@ -174,12 +174,12 @@ namespace Be.Vlaanderen.Basisregisters.Aws.DistributedMutex
             var acquiredLock = false;
             try
             {
-                _logger.LogInformation("Trying to acquire lock.");
+                _logger.LogInformation("Trying to acquire lock in table {TableName}.", _options.TableName);
                 acquiredLock = await AcquireLockAsync();
 
                 if (!acquiredLock)
                 {
-                    _logger.LogWarning("Could not get lock, another instance is busy.");
+                    _logger.LogWarning("Could not get lock in table {TableName}, another instance is busy.", _options.TableName);
                     return;
                 }
 
