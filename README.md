@@ -1,4 +1,4 @@
-# aws-distributed-mutex [![Build Status](https://github.com/Informatievlaanderen/aws-distributed-mutex/workflows/CI/badge.svg)](https://github.com/Informatievlaanderen/aws-distributed-mutex/actions)
+# aws-distributed-mutex [![Build Status](https://github.com/Informatievlaanderen/aws-distributed-mutex/workflows/Build/badge.svg)](https://github.com/Informatievlaanderen/aws-distributed-mutex/actions)
 
 A distributed lock (mutex) implementation for AWS using DynamoDB.
 

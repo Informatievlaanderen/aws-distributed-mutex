@@ -1,12 +1,11 @@
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
-
 namespace Be.Vlaanderen.Basisregisters.Aws.DistributedMutex
 {
     using System;
+    using System.Threading.Tasks;
     using System.Timers;
     using Amazon;
     using Amazon.DynamoDBv2;
+    using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.Logging;
 
     public class DistributedLockConfiguration
@@ -99,13 +98,9 @@ namespace Be.Vlaanderen.Basisregisters.Aws.DistributedMutex
 
         public DistributedLock(DistributedLockOptions options, string lockName, ILogger logger)
         {
-            ArgumentNullException.ThrowIfNull(options);
-            ArgumentNullException.ThrowIfNull(lockName);
-            ArgumentNullException.ThrowIfNull(logger);
-
-            _options = options;
-            _logger = logger;
-            _lockName = lockName;
+            _options = options ?? throw new ArgumentNullException(nameof(options));
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _lockName = lockName ?? throw new ArgumentNullException(nameof(lockName));
 
             _mutex = CreateDynamoDbMutex(options);
 

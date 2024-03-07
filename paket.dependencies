@@ -1,23 +1,23 @@
-framework: net6.0
+framework: net8.0, netstandard2.1
 source https://api.nuget.org/v3/index.json
 
 // PRODUCTION STUFF
-nuget Microsoft.Extensions.Configuration.Binder 6.0.0
-nuget Microsoft.Extensions.Configuration.Json 6.0.0
-nuget Microsoft.Extensions.Logging 6.0.0
+nuget Microsoft.Extensions.Configuration.Binder 8.0.1
+nuget Microsoft.Extensions.Configuration.Json 8.0.0
+nuget Microsoft.Extensions.Logging 8.0.0
 
-nuget AWSSDK.Core 3.7.106.8
-nuget AWSSDK.DynamoDBv2 3.7.102.15
+nuget AWSSDK.Core 3.7.302.15
+nuget AWSSDK.DynamoDBv2 3.7.301.18
 
 // VBR STUFF
-nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 6.0.3
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 7.0.4
 
 // TEST STUFF
-nuget Ductus.FluentDocker 2.10.55
-nuget Microsoft.NET.Test.Sdk 17.1.0
-nuget xunit 2.4.1
-nuget xunit.runner.visualstudio 2.4.3
-nuget FluentAssertions 6.5.1
+nuget Ductus.FluentDocker 2.10.59
+nuget Microsoft.NET.Test.Sdk 17.9.0
+nuget xunit 2.7.0
+nuget xunit.runner.visualstudio 2.5.7
+nuget FluentAssertions 6.12.0
 
 // BUILD STUFF
 nuget SourceLink.Embed.AllSourceFiles 2.8.3 copy_local: true
