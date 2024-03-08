@@ -15,10 +15,10 @@ licenseUrl https://opensource.org/licenses/MIT
 description A distributed lock (mutex) implementation for AWS using DynamoDB.
 
 dependencies
-  framework: net8.0
+  framework: netstandard2.1
     Microsoft.Extensions.Logging >= LOCKEDVERSION
     AWSSDK.DynamoDBv2 >= LOCKEDVERSION
 
 files
-  Be.Vlaanderen.Basisregisters.Aws.DistributedMutex.dll => lib\net8.0
-  Be.Vlaanderen.Basisregisters.Aws.DistributedMutex.pdb => lib\net8.0
+  Be.Vlaanderen.Basisregisters.Aws.DistributedMutex.dll => lib\netstandard2.1
+  Be.Vlaanderen.Basisregisters.Aws.DistributedMutex.pdb => lib\netstandard2.1
