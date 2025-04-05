@@ -1,10 +1,8 @@
-using System.Runtime.CompilerServices;
-
 namespace Be.Vlaanderen.Basisregisters.Aws.DistributedMutex.Tests
 {
-    using Amazon;
     using System;
     using System.Threading.Tasks;
+    using Amazon;
     using Xunit;
 
     public class EnvVarIgnoreFactAttribute : FactAttribute

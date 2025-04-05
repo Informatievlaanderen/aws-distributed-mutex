@@ -105,7 +105,7 @@ namespace Be.Vlaanderen.Basisregisters.Aws.DistributedMutex
             _mutex = CreateDynamoDbMutex(options);
 
             _renewLeaseTimer.Interval = options.LeasePeriod.TotalMilliseconds / 2;
-            _renewLeaseTimer.Elapsed += async (sender, args) => await RenewLeaseAsync();
+            _renewLeaseTimer.Elapsed += async (_, _) => await RenewLeaseAsync();
         }
 
         private static IMutex CreateDynamoDbMutex(DistributedLockOptions options)

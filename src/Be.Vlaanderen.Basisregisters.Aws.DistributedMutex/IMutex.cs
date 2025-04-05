@@ -26,6 +26,6 @@ namespace Be.Vlaanderen.Basisregisters.Aws.DistributedMutex
         /// </summary>
         /// <param name="token">original token</param>
         /// <returns></returns>
-        Task ReleaseLockAsync(LockToken token);
+        Task ReleaseLockAsync(LockToken? token);
     }
 }

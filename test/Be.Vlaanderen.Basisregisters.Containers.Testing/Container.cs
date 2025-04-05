@@ -2,6 +2,7 @@ namespace Be.Vlaanderen.Basisregisters.Containers.Testing
 {
     using System;
     using Ductus.FluentDocker.Builders;
+    using Ductus.FluentDocker.Model.Compose;
     using Ductus.FluentDocker.Services;
 
     public static class Container
@@ -18,6 +19,7 @@ namespace Be.Vlaanderen.Basisregisters.Containers.Testing
         public static ICompositeService Compose(string fileName, string waitForService, int waitForPort, string waitForProto, TimeSpan? timeout = null) => new Builder()
             .UseContainer()
             .UseCompose()
+            .AssumeComposeVersion(ComposeVersion.V2)
             .FromFile(fileName)
             .RemoveOrphans()
             .WaitForPort(waitForService, $"{waitForPort}:{waitForProto}", Convert.ToInt64(timeout?.TotalMilliseconds ?? 30_000))
