@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/informatievlaanderen/aws-distributed-mutex/compare/v4.0.1...v5.0.0) (2025-04-07)
+
+
+### Code Refactoring
+
+* use renovate and nuget + update pipeline ([dac24b4](https://github.com/informatievlaanderen/aws-distributed-mutex/commit/dac24b4803db754302fb4b386793085f7d38a98f))
+
+
+### BREAKING CHANGES
+
+* update to dotnet 9
+
 ## [4.0.1](https://github.com/informatievlaanderen/aws-distributed-mutex/compare/v4.0.0...v4.0.1) (2024-03-08)
 
 
