@@ -5,9 +5,9 @@
         <CentralPackageVersionOverrideEnabled>false</CentralPackageVersionOverrideEnabled>
     </PropertyGroup>
     <ItemGroup>
-        <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.3" />
-        <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="9.0.3" />
-        <PackageVersion Include="Microsoft.Extensions.Logging" Version="9.0.3" />
+        <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.6" />
+        <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="9.0.6" />
+        <PackageVersion Include="Microsoft.Extensions.Logging" Version="9.0.6" />
 
         <PackageVersion Include="AWSSDK.DynamoDBv2" Version="3.7.406.17" />
 
