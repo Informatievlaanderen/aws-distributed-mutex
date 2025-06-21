@@ -9,7 +9,7 @@
         <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="9.0.3" />
         <PackageVersion Include="Microsoft.Extensions.Logging" Version="9.0.3" />
 
-        <PackageVersion Include="AWSSDK.DynamoDBv2" Version="3.7.406.17" />
+        <PackageVersion Include="AWSSDK.DynamoDBv2" Version="3.7.407.28" />
 
         <PackageVersion Include="Ductus.FluentDocker" Version="2.10.59" />
         <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
