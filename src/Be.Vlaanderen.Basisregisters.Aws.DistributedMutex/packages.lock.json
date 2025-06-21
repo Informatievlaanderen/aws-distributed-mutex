@@ -4,11 +4,11 @@
     ".NETStandard,Version=v2.1": {
       "AWSSDK.DynamoDBv2": {
         "type": "Direct",
-        "requested": "[3.7.406.17, )",
-        "resolved": "3.7.406.17",
-        "contentHash": "HmCeGXJwbflvvtcLTXIPJsI4XsQslUZ4BPPUmyHNLmQJdORJ8veln/tsNPFWDlhjhZ1KI3jSDTdkQZsxPNqfVg==",
+        "requested": "[3.7.407.28, )",
+        "resolved": "3.7.407.28",
+        "contentHash": "v53zrsqCpzQHymjNLZ13RKuiy0ipYQc6Vels8US7JHzkg99sANY42cK/ZZtlowwJgWWHHo78isWQFH7zvtSlzw==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.402.35, 4.0.0)"
+          "AWSSDK.Core": "[3.7.402.73, 4.0.0)"
         }
       },
       "Microsoft.Extensions.Configuration.Binder": {
@@ -59,8 +59,8 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.402.35",
-        "contentHash": "9Jby5BBQTzZOqzQiFjJyr3zCe5GVi64U8gxOlPk3vTTuVJqtkisBJ0Jh1RBj2fNqnWmJLfaWSCLvX1L06zwHnQ==",
+        "resolved": "3.7.402.73",
+        "contentHash": "9R8vRJ+s9KSDu675c8b4lSPGicV78+7SkkCPMwQkYtSpfAvajWuNyoFGss48lSAFZYI3Rl6tHlCIDp6CEpik+A==",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
         }
