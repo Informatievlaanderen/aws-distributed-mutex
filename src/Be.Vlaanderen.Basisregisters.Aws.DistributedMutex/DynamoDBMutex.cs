@@ -9,6 +9,7 @@ namespace Be.Vlaanderen.Basisregisters.Aws.DistributedMutex
     using System.Linq;
     using System.Threading;
     using System.Threading.Tasks;
+    using Amazon.DynamoDBv2.DataModel;
 
     // ReSharper disable once InconsistentNaming
     public class DynamoDBMutex : IMutex, IMutexState
@@ -148,7 +149,7 @@ namespace Be.Vlaanderen.Basisregisters.Aws.DistributedMutex
             await table.DeleteItemAsync(doc);
         }
 
-        private async Task<Table> GetTableAsync()
+        private async Task<ITable> GetTableAsync()
         {
             if (!_settings.CreateTableIfNotExists)
             {
