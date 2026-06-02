@@ -148,16 +148,20 @@ namespace Be.Vlaanderen.Basisregisters.Aws.DistributedMutex
             await table.DeleteItemAsync(doc);
         }
 
-        private async Task<Table> GetTableAsync()
+        private async Task<ITable> GetTableAsync()
         {
             if (!_settings.CreateTableIfNotExists)
             {
-                return Table.LoadTable(_client, _settings.TableName);
+                return BuildTable();
             }
 
             await CreateTableAsync();
 
-            return Table.LoadTable(_client, _settings.TableName);
+            return BuildTable();
+
+            ITable BuildTable() => new TableBuilder(_client, _settings.TableName)
+                .AddHashKey(ColumnNames.ResourceId, DynamoDBEntryType.String)
+                .Build();
         }
 
         private async Task CreateTableAsync()
