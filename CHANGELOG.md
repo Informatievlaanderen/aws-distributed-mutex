@@ -1,3 +1,10 @@
+# [5.1.0](https://github.com/informatievlaanderen/aws-distributed-mutex/compare/v5.0.0...v5.1.0) (2026-06-02)
+
+
+### Features
+
+* update packages ([0c05309](https://github.com/informatievlaanderen/aws-distributed-mutex/commit/0c053095bef24bd57c6b3f0c1b80785b67dc7261))
+
 # [5.0.0](https://github.com/informatievlaanderen/aws-distributed-mutex/compare/v4.0.1...v5.0.0) (2025-04-07)
 
 
