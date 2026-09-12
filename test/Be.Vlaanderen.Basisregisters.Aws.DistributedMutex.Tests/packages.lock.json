@@ -40,8 +40,8 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "4.0.7.4",
-        "contentHash": "qNlzH2ygJ6JG8uefpvws782PnJlkVEwqRD5vz4fR8wFfwWU3ttyAjiwEOPEYcxl84mhQdYGI9gR+kroGFI2+wA=="
+        "resolved": "4.0.102.4",
+        "contentHash": "cFMZnb05RV290HDdybtgR5b/ypkLekeaoHde4tiQHLmgegGLMmcEKsvThnLm1PJOeWSNFcBxzC5fomOvWiW24A=="
       },
       "Microsoft.CodeCoverage": {
         "type": "Transitive",
@@ -245,7 +245,7 @@
       "be.vlaanderen.basisregisters.aws.distributedmutex": {
         "type": "Project",
         "dependencies": {
-          "AWSSDK.DynamoDBv2": "[4.0.18.6, )",
+          "AWSSDK.DynamoDBv2": "[4.0.103.7, )",
           "Microsoft.Extensions.Configuration.Binder": "[10.0.8, )",
           "Microsoft.Extensions.Configuration.Json": "[10.0.8, )",
           "Microsoft.Extensions.Logging": "[10.0.8, )"
@@ -263,11 +263,11 @@
       },
       "AWSSDK.DynamoDBv2": {
         "type": "CentralTransitive",
-        "requested": "[4.0.18.6, )",
-        "resolved": "4.0.18.6",
-        "contentHash": "hFBfaL/M34Q/nW3SZB1NL6UhpJSFgtcBq0eU2EPSaIrOsg6ThKc6vp6HpYmyIgkGV1Ck59SJGDte2tdw/ThaJQ==",
+        "requested": "[4.0.103.7, )",
+        "resolved": "4.0.103.7",
+        "contentHash": "0zGKYOL0OwgXkYU4fKd8T6cwd1QYYTuRDU9xNldR7v+Y9H14PMzbCae01LF29Ti0U0eQV2E1GKS77pmSChfS+Q==",
         "dependencies": {
-          "AWSSDK.Core": "[4.0.7.4, 5.0.0)"
+          "AWSSDK.Core": "[4.0.102.4, 5.0.0)"
         }
       },
       "Ductus.FluentDocker": {
